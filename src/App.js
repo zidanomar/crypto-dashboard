@@ -19,6 +19,7 @@ function App() {
       setCoins(res.data);
     })
     .catch(err => {console.error(err)});
+    resizeHandler();
   }, []);
 
   const inputHandler = e => {
