@@ -17,7 +17,6 @@ function App() {
     axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=try&order=market_cap_desc&per_page=30&page=1&sparkline=false')
     .then(res => {
       setCoins(res.data);
-      console.log(res.data);
     })
     .catch(err => {console.error(err)});
   }, []);
