@@ -21,13 +21,17 @@ function Card(props) {
                 </div>
 
                 <Row>
-                  <Col className="card-content">
+                  {/* <Col className="card-content">
                     <p className="text-uppercase">{coin.symbol}</p>
                     <small>code</small>
-                  </Col>
+                  </Col> */}
                   <Col className="card-content">
                     <p>₺ {coin.current_price.toLocaleString('en-US')}</p>
                     <small>Current Price</small>
+                  </Col>
+                  <Col className="card-content">
+                    <p className={coin.market_cap_change_percentage_24h < 0 ? 'down' : 'high'}>% {coin.market_cap_change_percentage_24h.toFixed(2)}</p>
+                    <small>Last 24h</small>
                   </Col>
                 </Row>
 
@@ -43,15 +47,13 @@ function Card(props) {
                 </Row>
 
                 <Row>
-                <Col className="card-content">
-                  <p className={coin.market_cap_change_percentage_24h < 0 ? 'down' : 'high'}>% {coin.market_cap_change_percentage_24h.toFixed(2)}</p>
-                  <small>Last 24h</small>
-                </Col>
-                <Col className="card-content">
+                
+                
+                </Row>
+                <div className="card-content d-flex flex-column justify-content-center text-center">
                   <p>₺{coin.market_cap.toLocaleString('en-US')}</p>
                   <small>Market Cap</small>
-                </Col>
-                </Row>
+                </div>
               </div>
             </Col>
           )

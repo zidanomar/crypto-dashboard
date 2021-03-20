@@ -9,7 +9,7 @@ function List(props) {
       <thead>
         <tr className="border-top-hidden">
           <th>Name</th>
-          <th>Code</th>
+          {/* <th>Code</th> */}
           <th>Current Price</th>
           <th>24h Highest</th>
           <th>24h Lowest</th>
@@ -27,7 +27,7 @@ function List(props) {
                 <h4>{coin.name}</h4>
               </div>
             </td>
-            <td>{coin.symbol}</td>
+            {/* <td>{coin.symbol}</td> */}
             <td>₺ {coin.current_price.toLocaleString('en-US')}</td>
             <td className="high">₺ {coin.high_24h.toLocaleString('en-US')}</td>
             <td className="down">₺ {coin.low_24h.toLocaleString('en-US')} </td>
