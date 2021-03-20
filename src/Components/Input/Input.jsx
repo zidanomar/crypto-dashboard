@@ -1,5 +1,4 @@
 import React from 'react'
-import {Form} from 'react-bootstrap'
 import './Input.css'
 
 function Input(props) {

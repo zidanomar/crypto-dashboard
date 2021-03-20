@@ -1,0 +1,25 @@
+.card-container {
+  padding: 2rem;
+  border: 2px solid var(--white);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.card-title img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.card-title p {
+  font-size: 2rem;
+}
+
+.card-content {
+  margin-bottom: 1rem;
+}
+
+.card-content p {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
