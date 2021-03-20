@@ -44,20 +44,17 @@ function App() {
   return (
     <div className="App">
       <Container>
-        <h1 className="text-center text-uppercase dashboard-title">crypto currency dashboard</h1>
-        
+        <h1 className="text-center text-uppercase dashboard-title">crypto currency dashboard</h1>      
         <Input input={inputHandler} />
-        
         {
           isMobile ?
           <Card coins={filteredCoins} /> : 
           <List coins={filteredCoins} />
         }
-        
-
-        
-
       </Container>
+      <footer>
+        <p className="text-center">Made with ❤ by <a href="https://github.com/zidanomar">Zidan Omar</a></p>
+      </footer>
     </div>
   );
 }
