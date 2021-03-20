@@ -1,0 +1,27 @@
+.table {
+  color: var(--white);
+}
+
+.table td {
+  padding-top: 2rem;
+}
+
+th {
+  font-weight: normal;
+}
+
+.border-top-hidden {
+  border-top: hidden;
+}
+
+th,
+td {
+  outline: none !important;
+  font-size: 1.2rem;
+}
+
+.table-content img {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
